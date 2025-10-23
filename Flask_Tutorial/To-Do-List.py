@@ -1,10 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Hello"
+    return render_template("index.html")
 
 @app.route("/search/<query>")
 def search_results(query):
@@ -21,6 +21,10 @@ def floatmy(myfloat):
 @app.route("/<string:Mystring>")
 def mystring(Mystring):
     return f" This is a {type(Mystring).__name__}"
+
+@app.route("/template")
+def mytemplate():
+    return r
 
 if __name__== "__main__":
     app.run(debug=True) 
