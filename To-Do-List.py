@@ -1,7 +1,4 @@
-import flask
-
-
-
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -10,9 +7,4 @@ app = Flask(__name__)
 def home():
     return "Home"
 
-app.run(debug=True)
-
-
-
-
-
+app.run(debug=True) 
