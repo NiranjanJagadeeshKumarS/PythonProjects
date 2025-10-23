@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template # pyright: ignore[reportMissingImports]
 
 app = Flask(__name__)
 
@@ -22,9 +22,18 @@ def floatmy(myfloat):
 def mystring(Mystring):
     return f" This is a {type(Mystring).__name__}"
 
+Articles=[
+    {"title":"HelleWorld",
+     "price":3498},
+    {"title":"Pen&NoteBook",
+     "price":3428}
+]
+
 @app.route("/template")
 def mytemplate():
-    return render_template(index.html)
+    return render_template("index.html", Varible=Articles)
+
+
 
 if __name__== "__main__":
     app.run(debug=True) 
