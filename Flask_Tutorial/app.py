@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return "Home"
 
 @app.route("/search/<query>")
 def search_results(query):
@@ -24,7 +24,7 @@ def mystring(Mystring):
 
 @app.route("/template")
 def mytemplate():
-    return r
+    return render_template(index.html)
 
 if __name__== "__main__":
     app.run(debug=True) 
