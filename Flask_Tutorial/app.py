@@ -29,9 +29,11 @@ Articles=[
      "price":3428}
 ]
 
+My_Niranjan="Hello Niranjan"
+
 @app.route("/template")
 def mytemplate():
-    return render_template("index.html", Varible=Articles)
+    return render_template("index.html", Varible=Articles, name=My_Niranjan)
 
 
 
