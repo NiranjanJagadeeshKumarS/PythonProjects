@@ -3,37 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notes Portal</title>
+    <link rel="stylesheet" href="static/style.css">
 </head>
-<style>
-    *{
-        padding: 0px 0px 0px 0px;
-        margin: 0px;
-    }
-</style>
-<body >
-    <div style="display: grid; grid-template-columns: auto; grid-row: 2; gap: 100px;">
-        <nav style="display: flex; align-items: center; margin-top: 15px;"> 
-            <p style="display: inline; padding-left: 10px; padding-right: 10px;"><a href="#">Back</a></p>
-            <h1 style="padding-left:43%; font-size: 40px;">My Notes</h1>
+<body>
+    <header>
+        <!-- Just to navigate  -->
+        <nav>
+            <a href="#">Back</a>
+            <h1 style="font-size: 70px;">Note Me</h1>
+            <input type="search" name="Search" id="searchBar">
         </nav>
-        <article style="display: grid; grid-row: 2; grid-template-columns: 1; gap: 20px; width: 50%;">
+    </header>
+    <main>
+        <!-- Main body -->
+         <div class="BodyContainer">
+            <h3>Create Notes</h3>
+            <form action="">
 
-            <header style="font-size: 32px; font-weight: 400;">Create Notes</header>
+            <!-- To get the tilte from the user  -->
+                <label for="title">Title</label>
+                <input type="text" name="Title" id="noteTitle">
+            <!-- To get the content of the title from the user -->
+                <label for="content">Content</label>
+                <textarea name="content" id="noteContent" cols="60" rows="40"></textarea>
+            <!-- To Submit the Notes -->
+                <input type="submit" value="Submite">
 
-            <form action="" style="display: grid; grid-template-rows: 3; gap: 30px;">
-                <div style="background-color: aliceblue;">
-                    <label for="title" style="font-size: larger; font-weight: 600;">Title:</label>
-                    <input type="text" style="display: block; width: 500px; height: 30px;">
-                </div>
-                <div style="background-color: red;">
-                    <label for="content">Content:</label>
-                    <textarea id="content" cols="60" rows="30" style="display: block;"></textarea>
-                </div>
-                
-                <input type="submit" value="Create">
             </form>
-        </article>
-    </div>
+         </div>
+        
+    </main>
 </body>
 </html>

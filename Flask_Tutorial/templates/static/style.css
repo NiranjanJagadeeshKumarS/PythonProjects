@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    background-image: url(/run/media/niranjanjk/1842E9C142E9A3AA/VS_Code/PythonProjects/Flask_Tutorial/templates/wallhaven-3zgymy_1920x1200.png);
+    background-repeat: no-repeat;
+}
+
+header{
+    margin: 10px 0px 0px 10px;
+    border: 1px solid black;
+    border-radius: 9px;
+    
+}
+ nav{
+    display: grid;
+    grid-template-columns: 50% 33.3% 17.7%;
+    
+
+ }
+#searchBar{
+    width: 400px;
+    height: 40px;
+    margin-right: 20px;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.BodyContainer{
+    margin-top: 40px;
+    
+    background-color: rgba(0, 0, 0, 0.377);
+
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+textarea,input,label{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+}
